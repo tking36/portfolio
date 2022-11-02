@@ -13,7 +13,7 @@ body{
 }
 /* NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV */
 
-.nav-area {
+ .nav-area {
   display: flex;
   background: #142440;
 
@@ -162,35 +162,49 @@ p {
 }
 
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: none;
+  box-shadow: none;
+}
+
 
 .carousel {
-	width: 70%;
+	width: 400px;
 	display: flex;
 	justify-content: space-around;
 }
+
 .carousel-images {
+  display: flex;
 	width: 80%;
   height: 80%
-	background: #fa8d8e;
+
 	padding: 10px;
 	border-radius: 10px;
 	box-sizing: border-box;
-	box-shadow: 2px 2px #f2cd99;
+
 }
+
 .carousel-images img {
 	width: 100%;
+  max-height: 200px
 	border-radius: 10px;
 	display: none;
 }
+
 .button {
 	align-self: center;
-	background: #f2cd99;
-	color: #888;
+	background: #ff4a04;
+	color: white;
 	padding: 10px;
 	border-radius: 50%;
 	text-align: center;
 	box-shadow: 1px 1px #fa8d8e;
 }
+
 .button:hover {
 	cursor: pointer;
 	background: #fa8d8e;
