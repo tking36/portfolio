@@ -49,14 +49,26 @@ body{
   text-decoration: none;
   display: block;
   padding: 15px;
+  border-bottom: 1px solid transparent;
+  transition: all ease-in-out 0.5s;
 }
 
+a:hover {
+  color: white;
+  border-color: white;
+}
+
+
+
 /* NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV NAV */
+
+/* Main Main Main Main Main Main Main Main Main Main Main Main Main */
 
 section {
   display: flex;
 flex-direction: column;
 align-items: center;
+
 
 }
 
@@ -74,6 +86,11 @@ div {
   border-bottom: 4px solid #fc0000;
   box-shadow: 0px 0px 7px 3px red ;
   color: #ff4a04;
+  padding: 20px 0 20px 0
+}
+
+.bio {
+  width: 90%;
 }
 
 #home {
@@ -91,6 +108,7 @@ div {
 }
 
 article {
+  display: flex;
   max-width: 70%;
   color: white;
   height: 200px;
@@ -98,9 +116,11 @@ article {
   background-position: center;
   position: relative;
   margin: 40px 0 100px 0;
+  padding: 0px 20px;
   border-radius: 12px;
   border-bottom: 4px solid #fc0000;
   box-shadow: 0px 0px 7px 3px red ;
+  align-items: center;
 }
 
 h1 {
@@ -112,13 +132,13 @@ h1 {
 }
 
 #me {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
   margin: auto;
 }
 
-#resume {
+#resumep {
   width:600px;
   height:700px;
 }
@@ -128,41 +148,29 @@ h1 {
 p {
   max-width: 70%;
   color: white;
-  margin: auto;
+  margin: ;
 }
 
 
-
-
-
-/* p {
-  opacity: 0;
-} */
-
-/* .show-description p {
-  height: 150px;
-}
-
-.show-description p {
-  opacity: 1;
-} */
-
-.greeting {
+#greeting {
   background-color: #142440;
 }
-.bio {
+#bio {
   background-color: #142440;
 }
-.resume {
+#resume {
   background-color: #142440;
 }
 
-.projects {
+#projects {
   background-color: #142440;
 }
 
+/* Main Main Main Main Main Main Main Main Main Main Main Main Main */
 
-.container {
+/* Carousel Carousel Carousel Carousel Carousel Carousel Carousel  */
+
+#projects {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -180,11 +188,12 @@ p {
 .carousel-images {
   display: flex;
 	width: 80%;
-  height: 80%
-
+  height: 80%;
+  object-fit:cover;
 	padding: 10px;
 	border-radius: 10px;
 	box-sizing: border-box;
+
 
 }
 
@@ -192,6 +201,7 @@ p {
 	width: 100%;
   max-height: 200px
 	border-radius: 10px;
+
 	display: none;
 }
 
@@ -216,7 +226,23 @@ p {
 	display: block;
 }
 
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
 
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.5em;
+
+}
+
+/* Carousel Carousel Carousel Carousel Carousel Carousel Carousel  */
 
 
 
@@ -231,7 +257,9 @@ a {
   padding: 5px;
   }
 
-
+.container {
+  width: 90%;
+}
 
 }
 
