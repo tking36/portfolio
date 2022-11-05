@@ -7,7 +7,7 @@
 }
 
 body{
-  background-color: #232323;
+  background-color: #476f9a;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
 }
@@ -15,11 +15,11 @@ body{
 
  .nav-area {
   display: flex;
-  background: #142440;
+  background: #226f54;
 
   z-index: 999;
-  border-bottom: 4px solid #fc0000;
-  box-shadow: 0px 0px 7px 3px red ;
+  border-bottom: 4px solid #C0E0DE;
+  box-shadow: 0px 0px 7px 3px #C0E0DE ;
   width: 100%;
   height: 10%;
   position: relative;
@@ -30,7 +30,7 @@ body{
 }
 
 .nav-name {
-  color: #ff4a04;
+  color: #C0E0DE;
   font-size: 1.5em;
 
 }
@@ -45,7 +45,7 @@ body{
 }
 
  a {
-  color: #ff4a04;
+  color: #c0e0de;
   text-decoration: none;
   display: block;
   padding: 15px;
@@ -54,8 +54,8 @@ body{
 }
 
 a:hover {
-  color: white;
-  border-color: white;
+  color: #e07a5f;
+  border-color: #e07a5f;
 }
 
 
@@ -83,14 +83,14 @@ div {
   justify-content: flex-end;
   align-items: center;
   align-content: center;
-  border-bottom: 4px solid #fc0000;
-  box-shadow: 0px 0px 7px 3px red ;
-  color: #ff4a04;
+  border-bottom: 4px solid #C0E0DE;
+  box-shadow: 0px 0px 7px 3px #C0E0DE;
+  color: #c0e0de;
   padding: 20px 0 20px 0
 }
 
-.bio {
-  width: 90%;
+#bio {
+  width: 80%;
 }
 
 #home {
@@ -110,7 +110,7 @@ div {
 article {
   display: flex;
   max-width: 70%;
-  color: white;
+  color: #e07a5f;
   height: 200px;
   background-size: cover;
   background-position: center;
@@ -118,8 +118,8 @@ article {
   margin: 40px 0 100px 0;
   padding: 0px 20px;
   border-radius: 12px;
-  border-bottom: 4px solid #fc0000;
-  box-shadow: 0px 0px 7px 3px red ;
+  border-bottom: 4px solid #C0E0DE;
+  box-shadow: 0px 0px 7px 3px #C0E0DE ;
   align-items: center;
 }
 
@@ -127,7 +127,7 @@ h1 {
   font-family: 'Roboto', serif;
   text-align: center;
   font-size: 50px;
-  color: white;
+  color: #e07a5f;
   margin: 40px 0 0 0;
 }
 
@@ -136,6 +136,8 @@ h1 {
   height: 200px;
   border-radius: 100px;
   margin: auto;
+  margin-top: 50px;
+  float:
 }
 
 #resumep {
@@ -147,23 +149,24 @@ h1 {
 
 p {
   max-width: 70%;
-  color: white;
+  color: #e07a5f;
   margin: ;
 }
 
 
 #greeting {
-  background-color: #142440;
+  background-color: #226f54;
 }
 #bio {
-  background-color: #142440;
+  background-color: #226f54;
 }
 #resume {
-  background-color: #142440;
+  background-color: #226f54;
 }
 
 #projects {
-  background-color: #142440;
+
+  background-color: #226f54;
 }
 
 /* Main Main Main Main Main Main Main Main Main Main Main Main Main */
@@ -176,6 +179,7 @@ p {
   justify-content: center;
   border-bottom: none;
   box-shadow: none;
+  padding: 0px 10px 0px 10px;
 }
 
 
@@ -193,6 +197,8 @@ p {
 	padding: 10px;
 	border-radius: 10px;
 	box-sizing: border-box;
+  border-bottom: none;
+  box-shadow: none;
 
 
 }
@@ -206,20 +212,21 @@ p {
 }
 
 .button {
+   font-size: 2em;
 	align-self: center;
-	background: #ff4a04;
-	color: white;
-	padding: 10px;
+	background: #c0e0de;
+	color: #e07a5f;
+	padding: 0px;
 	border-radius: 50%;
 	text-align: center;
-	box-shadow: 1px 1px #fa8d8e;
+
 }
 
 .button:hover {
 	cursor: pointer;
-	background: #fa8d8e;
-	box-shadow: 1px 1px #f2cd99;
-	color: white;
+	font-size: 2.2em;
+	box-shadow: px 1px #e07a5f;
+	color: #e07a5f;
 }
 
 .carousel-images img:first-of-type {
@@ -251,24 +258,38 @@ p {
 @media screen and (max-width: 550px) {
 
 a {
- color: #ff4a04;
+ color: #c0e0de;
  text-decoration: none;
   display: block;
   padding: 5px;
   }
 
 .container {
-  width: 90%;
-}
 
 }
+
+.button {
+ font-size: 1.5em;
+ max-width: 1.5em;
+}
+
+div {
+  width: 100%;
+}
+
+
 
 @media screen and (max-width: 640px) {
 
   #resume {
-        width:400px;
-        height:500px;
+        width:95%;
+
     }
+
+#resumep {
+  height: 600px;
+  width: 95%;
+}
 }
 
 
@@ -276,6 +297,6 @@ a {
 
   p {
     width: 600px;
-    color: white;
+    color: #e07a5f;
   }
 }

@@ -1,14 +1,3 @@
-// $(() => {
-//
-// $('div').on('click', function() {
-//     $(this).toggleClass('show-description');
-// })
-//
-// })
-
-
-
-
 
 //Carousel////Carousel////Carousel////Carousel//
 
@@ -60,35 +49,67 @@ $(() => {
 
 
 const show = () => {
-  $('#greeting').toggle()
+  $('#greeting').show()
   $('#bio').hide()
   $('#resume').hide()
   $('#projects').hide()
+  $('#me').show()
 }
 
 const show2 = () => {
-  $('#bio').toggle()
+  $('#bio').show()
   $('#greeting').hide()
   $('#resume').hide()
   $('#projects').hide()
+    $('#me').show()
+
 }
 const show3 = () => {
-  $('#resume').toggle()
+  $('#resume').show()
   $('#bio').hide()
   $('#greeting').hide()
   $('#projects').hide()
+  $('#me').hide()
+
 }
 const show4 = () => {
-  $('#projects').toggle()
+  $('#projects').show()
   $('#bio').hide()
   $('#resume').hide()
   $('#greeting').hide()
+    $('#me').hide()
+
+
+
 }
 
 $('#h').on('click',show)
 $('#b').on('click',show2)
 $('#r').on('click',show3)
 $('#p').on('click',show4)
+})
+
+
+
+
+
+$(() => {
+
+let $body = $('body')
+
+const darkMode = () => {
+  $body.css('background', 'black')
+}
+
+const lightMode = () => {
+  $body.css('background', '#476f9a')
+}
+
+$('#day').on('click',lightMode)
+
+$('#night').on('click',darkMode)
+
+
 
 
 })
