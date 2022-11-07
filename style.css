@@ -134,9 +134,15 @@ h1 {
   float:
 }
 
+#resumepdf {
+  width:600px;
+  height:700px;
+}
+
 #resumep {
   width:600px;
   height:700px;
+  display: none;
 }
 
 
@@ -263,10 +269,6 @@ a {
   padding: 5px;
   }
 
-.container {
-
-}
-
 .button {
  font-size: 1.5em;
  max-width: 1.5em;
@@ -275,7 +277,7 @@ a {
 div {
   width: 100%;
 }
-
+}
 
 
 @media screen and (max-width: 640px) {
@@ -285,9 +287,14 @@ div {
 
 }
 
+#resumepdf {
+  display: none;
+}
+
 #resumep {
   height: 600px;
   width: 95%;
+  display: block;
 }
 }
 
