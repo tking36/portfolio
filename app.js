@@ -38,7 +38,7 @@ $('.carousel-images').children().eq(currentImgIndex).css('display', 'block')
 
 //Carousel////Carousel////Carousel////Carousel//
 
-
+//Showing Divs//
 
 $(() => {
 
@@ -49,7 +49,7 @@ $(() => {
 
 
 const show = () => {
-  $('#greeting').show()
+  $('#greetingdiv').show()
   $('#bio').hide()
   $('#resume').hide()
   $('#projects').hide()
@@ -58,7 +58,7 @@ const show = () => {
 
 const show2 = () => {
   $('#bio').show()
-  $('#greeting').hide()
+  $('#greetingdiv').hide()
   $('#resume').hide()
   $('#projects').hide()
     $('#me').show()
@@ -67,7 +67,7 @@ const show2 = () => {
 const show3 = () => {
   $('#resume').show()
   $('#bio').hide()
-  $('#greeting').hide()
+  $('#greetingdiv').hide()
   $('#projects').hide()
   $('#me').hide()
 
@@ -76,7 +76,7 @@ const show4 = () => {
   $('#projects').show()
   $('#bio').hide()
   $('#resume').hide()
-  $('#greeting').hide()
+  $('#greetingdiv').hide()
     $('#me').hide()
 
 
@@ -89,9 +89,9 @@ $('#r').on('click',show3)
 $('#p').on('click',show4)
 })
 
+//Showing Divs//
 
-
-
+//Night/Day Mode//
 
 $(() => {
 
@@ -109,7 +109,6 @@ $('#day').on('click',lightMode)
 
 $('#night').on('click',darkMode)
 
-
-
-
 })
+
+//Night/Day Mode//

@@ -16,8 +16,6 @@ body{
  .nav-area {
   display: flex;
   background: #226f54;
-
-  z-index: 999;
   border-bottom: 4px solid #C0E0DE;
   box-shadow: 0px 0px 7px 3px #C0E0DE ;
   width: 100%;
@@ -115,11 +113,7 @@ article {
   background-size: cover;
   background-position: center;
   position: relative;
-  margin: 40px 0 100px 0;
-  padding: 0px 20px;
-  border-radius: 12px;
-  border-bottom: 4px solid #C0E0DE;
-  box-shadow: 0px 0px 7px 3px #C0E0DE ;
+  padding: 20px 20px;
   align-items: center;
 }
 
@@ -153,8 +147,12 @@ p {
   margin: ;
 }
 
+i {
+  color: #c0e0de;
+}
 
-#greeting {
+
+#greetingdiv {
   background-color: #226f54;
 }
 #bio {
@@ -166,7 +164,7 @@ p {
 
 #projects {
 
-  background-color: #226f54;
+  /* background-color: #226f54; */
 }
 
 /* Main Main Main Main Main Main Main Main Main Main Main Main Main */
@@ -180,6 +178,7 @@ p {
   border-bottom: none;
   box-shadow: none;
   padding: 0px 10px 0px 10px;
+
 }
 
 
@@ -282,9 +281,9 @@ div {
 @media screen and (max-width: 640px) {
 
   #resume {
-        width:95%;
+  width:95%;
 
-    }
+}
 
 #resumep {
   height: 600px;
@@ -295,8 +294,8 @@ div {
 
 @media screen and (max-width: 1000px) {
 
-  p {
-    width: 600px;
-    color: #e07a5f;
+p {
+  width: 600px;
+  color: #e07a5f;
   }
 }
